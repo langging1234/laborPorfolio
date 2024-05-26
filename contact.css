@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background-color: #c6e8d7;
+   
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.left-title{
+    font-weight: 600;
+    color: rgb(152, 191, 156);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(152, 191, 156);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+     width: 400px;
+     height: 50px;
+     border: none;
+     outline: none;
+     padding-left: 25px;
+     font-weight: 500;
+     color: grey;
+     border-radius: 50px;
+
+}
+.left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid rgb(152, 191, 156);
+}
+.contact-inputs::placeholder{
+    color:#a9a9a9;
+}
+
+.left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, white,rgb(103, 121, 78));
+    cursor: pointer;
+}
+.right img{
+    width:500px;
+} 
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80px;
+    }
+    .right{
+        display: none;
+    }
+}
+
